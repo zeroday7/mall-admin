@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+	^[a-z0-9]{5,20}$
+	<input type="text" name="managerId" required pattern="^[a-z0-9]{5,20}$">
+	<br>
+	^[a-z0-9\W]{4,10}$
+	<input type="password" name="managerPw" required pattern="^[a-z0-9\W]{4,10}$">
+	<br>
+	^\d{9}-\d{1}$
+	<input type="text" name="ebookISBN"  required pattern="^\d{9}-\d{1}$">
+	<br>
+	^[a-zA-Z가-힣\s]+$
+	<input type="text" name="ebookAuthor" required pattern="^[a-zA-Z가-힣\s]+$">
+	<br>
+	^[0-9]+$
+	<input type="text" name="ebookPageCount" required pattern="^[0-9]+$">
+	<br>
+	^[0-9]+$
+	<input type="text" name="ebookPrice" required pattern="^[0-9]+$">
+	<br>
+	^[a-z0-9]{5,20}$
+	<input type="text" name="managerId" required pattern="^[a-z0-9]{5,20}$">
+	<br>
+	^[a-z0-9\W]{4,10}$
+	<input type="password" name="managerPw" required pattern="^[a-z0-9\W]{4,10}$">
+	<br>
+	^[a-zA-Z가-힣]{2,100}$
+	<input type="text" name="managerName" required pattern="^[a-zA-Z가-힣]{2,100}$">
+	<button type="submit">submit</button>
+</form>
+</body>
+</html>
